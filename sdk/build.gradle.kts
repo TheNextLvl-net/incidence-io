@@ -22,11 +22,11 @@ tasks.withType<Javadoc>().configureEach {
 
 publishing {
     publications.create<MavenPublication>("maven") {
-        artifactId = "incidence-io"
+        artifactId = "incidents-io"
         groupId = "net.thenextlvl"
-        // pom.url.set("https://thenextlvl.net/docs/incidence-io") // todo: add documentation
+        // pom.url.set("https://thenextlvl.net/docs/incidents-io") // todo: add documentation
         pom.scm {
-            val repository = "TheNextLvl-net/incidence-io"
+            val repository = "TheNextLvl-net/incidents-io"
             url.set("https://github.com/$repository")
             connection.set("scm:git:git://github.com/$repository.git")
             developerConnection.set("scm:git:ssh://github.com/$repository.git")
