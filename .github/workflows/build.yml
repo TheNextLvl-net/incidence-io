@@ -15,10 +15,3 @@ jobs:
         uses: gradle/actions/setup-gradle@v5
       - name: Test with Gradle
         run: ./gradlew test
-      - name: Build with Gradle
-        run: ./gradlew shadowJar
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: worlds
-          path: build/libs/*.jar
