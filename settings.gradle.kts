@@ -3,3 +3,4 @@ plugins {
 }
 
 rootProject.name = "incidence-io"
+include("sdk")
